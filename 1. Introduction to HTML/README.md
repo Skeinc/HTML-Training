@@ -9,3 +9,4 @@ HTML предоставляет собой язык разметки, котор
 Посетите следующие ресурсы, чтобы узнать больше:
 - [Структура HTML документа](1.1%20HTML%20Document%20Structure/README.md)
 - [HTML теги](1.2%20HTML%20Tags/README.md)
+- [HTML атрибуты](1.3%20HTML%20attributes/README.md)
