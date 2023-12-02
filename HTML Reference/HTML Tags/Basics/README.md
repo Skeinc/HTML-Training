@@ -6,3 +6,4 @@
 - [Тег !DOCTYPE](Tag%20<!DOCTYPE>/README.md)
 - [Тег head](Tag%20<head>/README.md)
 - [Тег html](Tag%20<html>/README.md)
+- [Тег title](Tag%20<title>/README.md)
