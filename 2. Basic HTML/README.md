@@ -4,3 +4,4 @@ HTML (Hyper Text Markup Language) является основным строит
 
 Посетите следующие ресурсы, чтобы узнать больше:
 - [Заголовки в HTML](2.1%20HTML%20Headings/README.md)
+- [Параграфы в HTML](2.2%20HTML%20Paragraphs/README.md)
