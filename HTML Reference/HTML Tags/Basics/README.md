@@ -9,3 +9,4 @@
 - [Тег title](Tag%20<title>/README.md)
 - [Тег body](Tag%20<body>/README.md)
 - [Тег h1-h6](Tag%20<h1>%20-%20<h6>/README.md)
+- [Тег p](Tag%20<p>/README.md)
