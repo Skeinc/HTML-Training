@@ -7,3 +7,4 @@
 - [Тег head](Tag%20<head>/README.md)
 - [Тег html](Tag%20<html>/README.md)
 - [Тег title](Tag%20<title>/README.md)
+- [Тег body](Tag%20<body>/README.md)
