@@ -11,3 +11,4 @@
 - [Тег h1-h6](Tag%20<h1>%20-%20<h6>/README.md)
 - [Тег p](Tag%20<p>/README.md)
 - [Тег br](Tag%20<br>/README.md)
+- [Тег hr](Tag%20<hr>/README.md)
