@@ -12,3 +12,4 @@
 - [Тег p](Tag%20<p>/README.md)
 - [Тег br](Tag%20<br>/README.md)
 - [Тег hr](Tag%20<hr>/README.md)
+- [Тег комментарий](Tag%20<!--...-->/README.md)
