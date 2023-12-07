@@ -6,3 +6,4 @@
 - [Тег abbr](Tag%20<abbr>/README.md)
 - [Тег address](Tag%20<address>/README.md)
 - [Тег b](Tag%20<b>/README.md)
+- [Тег bdi](Tag%20<bdi>/README.md)
