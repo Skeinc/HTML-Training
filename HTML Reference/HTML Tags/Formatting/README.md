@@ -7,3 +7,4 @@
 - [Тег address](Tag%20<address>/README.md)
 - [Тег b](Tag%20<b>/README.md)
 - [Тег bdi](Tag%20<bdi>/README.md)
+- [Тег bdo](Tag%20<bdo>/README.md)
