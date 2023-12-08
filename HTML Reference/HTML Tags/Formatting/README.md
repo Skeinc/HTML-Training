@@ -12,3 +12,4 @@
 - [Тег cite](Tag%20<cite>/README.md)
 - [Тег code](Tag%20<code>/README.md)
 - [Тег del](Tag%20<del>/README.md)
+- [Тег dfn](Tag%20<dfn>/README.md)
