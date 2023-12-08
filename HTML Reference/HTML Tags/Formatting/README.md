@@ -9,3 +9,4 @@
 - [Тег bdi](Tag%20<bdi>/README.md)
 - [Тег bdo](Tag%20<bdo>/README.md)
 - [Тег blockquote](Tag%20<blockquote>/README.md)
+- [Тег cite](Tag%20<cite>/README.md)
