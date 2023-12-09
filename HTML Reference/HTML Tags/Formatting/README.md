@@ -17,3 +17,4 @@
 - [Тег i](Tag%20<i>/README.md)
 - [Тег ins](Tag%20<ins>/README.md)
 - [Тег kbd](Tag%20<kbd>/README.md)
+- [Тег mark](Tag%20<mark>/README.md)
