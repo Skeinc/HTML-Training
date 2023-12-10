@@ -18,3 +18,4 @@
 - [Тег ins](Tag%20<ins>/README.md)
 - [Тег kbd](Tag%20<kbd>/README.md)
 - [Тег mark](Tag%20<mark>/README.md)
+- [Тег meter](Tag%20<meter>/README.md)
