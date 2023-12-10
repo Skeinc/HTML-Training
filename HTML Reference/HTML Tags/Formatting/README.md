@@ -20,3 +20,4 @@
 - [Тег mark](Tag%20<mark>/README.md)
 - [Тег meter](Tag%20<meter>/README.md)
 - [Тег pre](Tag%20<pre>/README.md)
+- [Тег progress](Tag%20<progress>/README.md)

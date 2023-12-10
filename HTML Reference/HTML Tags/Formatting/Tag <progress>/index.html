@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag progress</title>
+</head>
+<body>
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="0" max="100">0%</progress>
+
+    <script>
+        const progress = document.querySelector('#file');
+        let value = 0;
+
+        function updateProgress() {
+            value += 1;
+            progress.value = value;
+            progress.innerHTML = value + "%";
+
+            if(value < 100) {
+                setTimeout(updateProgress, 100);
+            }
+        }
+
+        updateProgress();
+    </script>
+</body>
+</html>
