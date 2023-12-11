@@ -26,3 +26,5 @@
 - [Тег rt](Tag%20<rt>/README.md)
 - [Тег ruby](Tag%20<ruby>/README.md)
 - [Тег s](Tag%20<s>/README.md)
+- [Тег samp](Tag%20<samp>/README.md)
+- [Тег small](Tag%20<small>/README.md)
