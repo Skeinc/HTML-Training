@@ -1,0 +1,17 @@
+# Тег ruby
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag ruby</title>
+</head>
+<body>
+    <ruby>
+        漢 <rt> ㄏㄢˋ </rt>
+    </ruby>
+</body>
+</html>
+```
