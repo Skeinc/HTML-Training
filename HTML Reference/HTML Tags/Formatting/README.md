@@ -24,3 +24,4 @@
 - [Тег q](Tag%20<q>/README.md)
 - [Тег rp](Tag%20<rp>/README.md)
 - [Тег rt](Tag%20<rt>/README.md)
+- [Тег ruby](Tag%20<ruby>/README.md)
