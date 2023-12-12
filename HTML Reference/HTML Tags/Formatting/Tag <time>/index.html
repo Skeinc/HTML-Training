@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag time</title>
+</head>
+<body>
+    <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+    <p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+    <button onclick="getCurrentDateTime()" type="button">Get current time</button>
+    <p>Current time = <time id="currentTime"></time></p>
+
+    <script>
+        function getCurrentDateTime() {
+            const date = new Date();
+            const currentTime = document.getElementById("currentTime");
+
+            function parseMonth(month) {
+                if(month == 12) {
+                    month = 1;
+                }
+                else {
+                    month++;
+                }
+
+                return month;
+            }
+
+            currentTime.innerHTML = `${date.getFullYear()}-${parseMonth(date.getMonth())}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+        }
+    </script>
+</body>
+</html>
