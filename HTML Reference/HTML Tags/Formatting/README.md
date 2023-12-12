@@ -30,3 +30,4 @@
 - [Тег small](Tag%20<small>/README.md)
 - [Тег strong](Tag%20<strong>/README.md)
 - [Тег sub](Tag%20<sub>/README.md)
+- [Тег sup](Tag%20<sup>/README.md)
