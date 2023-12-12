@@ -28,3 +28,4 @@
 - [Тег s](Tag%20<s>/README.md)
 - [Тег samp](Tag%20<samp>/README.md)
 - [Тег small](Tag%20<small>/README.md)
+- [Тег strong](Tag%20<strong>/README.md)
