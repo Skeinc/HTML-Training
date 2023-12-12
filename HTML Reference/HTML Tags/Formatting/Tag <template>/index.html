@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag template</title>
+</head>
+<body>
+    <button onclick="showContent()" type="button">Show hidden content</button>
+
+    <template id="greeting">
+        <p>Hello, dude! My name is Dmitry Anufriev, i'm 21 y.o frontend developer. My favorite framework is Angular 17!</p>
+    </template>
+
+    <script>
+        function showContent(){
+            const template = document.getElementsByTagName("template")[0];
+            const cloneElement = template.content.cloneNode(true);
+            document.body.appendChild(cloneElement);
+        }
+    </script>
+</body>
+</html>
