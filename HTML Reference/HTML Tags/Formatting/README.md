@@ -34,3 +34,4 @@
 - [Тег template](Tag%20<template>/README.md)
 - [Тег time](Tag%20<time>/README.md)
 - [Тег u](Tag%20<u>/README.md)
+- [Тег var](Tag%20<var>/README.md)
