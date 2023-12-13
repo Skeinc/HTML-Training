@@ -33,3 +33,4 @@
 - [Тег sup](Tag%20<sup>/README.md)
 - [Тег template](Tag%20<template>/README.md)
 - [Тег time](Tag%20<time>/README.md)
+- [Тег u](Tag%20<u>/README.md)
