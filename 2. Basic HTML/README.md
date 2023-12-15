@@ -9,3 +9,4 @@ HTML (Hyper Text Markup Language) является основным строит
 - [Форматирование текста в HTML](2.4%20HTML%20Text%20Formatting/README.md)
 - [Цитаты в HTML](2.5%20HTML%20Quotations/README.md)
 - [Комментарии в HTML](2.6%20HTML%20Comments/README.md)
+- [Цвета в HTML](2.7%20HTML%20Colors/README.md)
