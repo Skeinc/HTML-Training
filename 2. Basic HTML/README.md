@@ -11,3 +11,4 @@ HTML (Hyper Text Markup Language) является основным строит
 - [Комментарии в HTML](2.6%20HTML%20Comments/README.md)
 - [Цвета в HTML](2.7%20HTML%20Colors/README.md)
 - [Стили в HTML](2.8%20HTML%20Styles%20CSS/README.md)
+- [Ссылки в HTML](2.9%20HTML%20Links/README.md)

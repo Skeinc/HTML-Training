@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+    <style>
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        button:link, button:visited {
+            background-color: #f44336;
+            color: white;
+            padding: 15px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        button:hover, button:active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="hyperlinks">Hyperlinks</h1>
+    <h2>HTML Links - Syntax</h2>
+    <a href="https://www.google.com">Visit Google.com</a>
+
+    <h2>HTML Links - The Target Attribute</h2>
+    <ul>
+        <li><a href="https://www.google.com" target="_self">Visit Google.com with target _self</a></li>
+        <li><a href="https://www.google.com" target="_blank">Visit Google.com with target _blank</a></li>
+        <li><a href="https://www.google.com" target="_parent">Visit Google.com with target _parent</a></li>
+        <li><a href="https://www.google.com" target="_top">Visit Google.com with target _top</a></li>
+    </ul>
+
+    <h2>Absolute URLs versus Relative URLs</h2>
+    <h3>Absolute URLs</h3>
+    <p><a href="https://www.google.com">Google</a></p>
+
+    <h3>Relative URLs</h3>
+    <p><a href="./README.md">README</a></p>
+
+    <h2>HTML Links - Use an Image as a Link</h2>
+    <a href="./README.md">
+        <img src="smile.png" alt="Unknown image">
+    </a>
+
+    <h2>Link to an Email Address</h2>
+    <a href="mailto:iamskezy@gmail.com">Send Email</a>
+
+    <h2>Button as a Link</h2>
+    <button onclick="document.location='./README.md'">README File</button>
+
+    <h2>Link Titles</h2>
+    <a href="https://www.google.com" title="Go to Google site!">Google</a>
+
+    <h2>Create a Bookmark in HTML</h2>
+    <a href="#hyperlinks">Jump to Hyperlinks</a>
+</body>
+</html>
