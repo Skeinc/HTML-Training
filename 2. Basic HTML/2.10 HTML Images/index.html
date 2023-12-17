@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+    <style>
+        .image {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .image-background {
+            background-image: url('./image.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Images</h1>
+    <h2>Images Syntax</h2>
+    <img src="./image.jpg" alt="leaves in autumn">
+
+    <h2>The src Attribute</h2>
+    <img src="./image.jpg">
+
+    <h2>The alt Attribute</h2>
+    <img src="./image.jpg" alt="leaves in autumn">
+
+    <h2>Image Size</h2>
+    <img src="./image.jpg" alt="leaves in autumn" width="300" height="200">
+
+    <h2>Width and Height or Style?</h2>
+    <img src="./image.jpg" alt="leaves in autumn" class="image">
+
+    <h2>Images in Another Folder</h2>
+    <img src="/images/image.jpg" alt="leaves in autumn">
+
+    <h2>Images on Another Server/Website</h2>
+    <img src="https://google.com/photos/image.jpeg" alt="leaves in autumn">
+
+    <h2>Animated Images</h2>
+    <img src="./image.gif" alt="leaves in autumn">
+
+    <h2>Image as a Link</h2>
+    <a href="./README.md">
+        <img src="./image.jpg" alt="leaves in autumn">
+    </a>
+
+    <h2>Image Floating</h2>
+    <p><img src="./image.jpg" alt="leaves in autumn" style="float: right;">The image will float to the right of the text.</p>
+
+    <h1>Image Maps</h1>
+    <img src="./image.jpg" alt="leaves in autumn" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="rect" coords="0, 0, 100, 100" href="#area-first" alt="area first">
+        <area shape="rect" coords="200, 200, 300, 300" href="#area-second" alt="area second">
+        <area shape="rect" coords="100, 200, 100" href="#area-third" alt="area third">
+        <area shape="poly" coords="50,100,150,200,250,300,350,400,450,500" href="#area-fourth" alt="area fouth">
+    </map>
+
+    <h1>HTML Background Images</h1>
+    <div style="width: 100%; height: 400px;" class="image-background">
+
+    </div>
+
+    <h1>HTML picture Element</h1>
+    <picture>
+        <source media="(max-width: 650px)" srcset="./image.png">
+        <source media="(max-width: 400px)" srcset="./image.svg">
+        <img src="./image.jpg" alt="leaves in autumn">
+    </picture>
+</body>
+</html>
