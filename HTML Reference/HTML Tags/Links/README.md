@@ -5,3 +5,4 @@
 Посетите следующие ресурсы, чтобы узнать больше:
 - [Тег a](Tag%20<a>/README.md)
 - [Тег link](Tag%20<link>/README.md)
+- [Тег nav](Tag%20<nav>/README.md)
