@@ -5,4 +5,5 @@ HTML-теги являются важными элементами для соз
 Посетите следующие ресурсы, чтобы узнать больше:
 - [Базовые HTML теги](Basics/README.md)
 - [Теги HTML для форматирования](Formatting/README.md)
+- [Теги HTML для изображений](Images/README.md)
 - [Теги HTML для ссылок](Links/README.md)
