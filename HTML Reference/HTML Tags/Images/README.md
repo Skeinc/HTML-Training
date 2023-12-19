@@ -7,3 +7,4 @@
 - [Тег img](Tag%20<img>/README.md)
 - [Тег map](Tag%20<map>/README.md)
 - [Тег area](Tag%20<area>/README.md)
+- [Тег canvas](Tag%20<canvas>/README.md)

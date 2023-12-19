@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag canvas</title>
+</head>
+<body>
+    <canvas id="canvasDemo" width="500" height="500"></canvas>
+
+    <script>
+        const canvas = document.getElementById("canvasDemo");
+        const context = canvas.getContext("2d");
+
+        // Прямоугольник
+        context.fillStyle="blue";
+        context.fillRect(20, 20, 100, 100);
+
+        // Круг
+        context.fillStyle="green";
+        const circle = new Path2D();
+        circle.arc(100, 100, 50, 0, 2 * Math.PI);
+
+        context.fill(circle);
+
+        // Линия
+        context.beginPath();
+        context.moveTo(100, 150);
+        context.lineTo(200, 150);
+        context.stroke();
+
+        // Текст
+        context.font = "20px Arial";
+        context.fillText("Привет, Canvas", 20, 20);
+
+        // Изображения
+        const image = new Image();
+        image.src = "../image.jpg";
+
+        image.onload = function() {
+            context.drawImage(image, 220, 20, 200, 150);
+        };
+    </script>
+</body>
+</html>
