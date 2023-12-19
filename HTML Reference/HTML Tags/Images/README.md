@@ -10,3 +10,4 @@
 - [Тег canvas](Tag%20<canvas>/README.md)
 - [Тег figcaption](Tag%20<figcaption>/README.md)
 - [Тег figure](Tag%20<figure>/README.md)
+- [Тег picture](Tag%20<picture>/README.md)
