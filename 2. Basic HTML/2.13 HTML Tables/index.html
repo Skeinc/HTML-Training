@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .collapsed{
+            border: 1px solid green;
+            border-collapse: collapse;
+        }
+        .styled {
+            border: 1px solid red;
+            border-collapse: collapse;
+            background-color: lightcoral;
+        }
+        .rounded {
+            border: 1px solid orange;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Tables</h1>
+    <h2>Define an HTML Table</h2>
+    <table>
+        <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Sony</td>
+            <td>Maria Anders</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Skeinc</td>
+            <td>Anufriev Dmitry</td>
+            <td>Russia</td>
+        </tr>
+    </table>
+
+    <h1>HTML Table Borders</h1>
+    <h2>How to add a border</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Height</td>
+            <td>177</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Weight</td>
+            <td>73 kg</td>
+        </tr>
+    </table>
+    
+    <h2>Collapsed Table Borders</h2>
+    <table class="collapsed">
+        <tr class="collapsed">
+            <th class="collapsed">ID</th>
+            <th class="collapsed">Name</th>
+            <th class="collapsed">Value</th>
+        </tr>
+        <tr class="collapsed">
+            <td class="collapsed">1</td>
+            <td class="collapsed">Height</td>
+            <td class="collapsed">177</td>
+        </tr>
+        <tr class="collapsed">
+            <td class="collapsed">2</td>
+            <td class="collapsed">Weight</td>
+            <td class="collapsed">73 kg</td>
+        </tr>
+    </table>
+
+    <h2>Style Table Borders</h2>
+    <table class="styled">
+        <tr class="styled">
+            <th class="styled">ID</th>
+            <th class="styled">Name</th>
+            <th class="styled">Value</th>
+        </tr>
+        <tr class="styled">
+            <td class="styled">1</td>
+            <td class="styled">Height</td>
+            <td class="styled">177</td>
+        </tr>
+        <tr class="styled">
+            <td class="styled">2</td>
+            <td class="styled">Weight</td>
+            <td class="styled">73 kg</td>
+        </tr>
+    </table>
+
+    <h2>Round Table Borders</h2>
+    <table class="rounded">
+        <tr class="rounded">
+            <th class="rounded">ID</th>
+            <th class="rounded">Name</th>
+            <th class="rounded">Value</th>
+        </tr>
+        <tr class="rounded">
+            <td class="rounded">1</td>
+            <td class="rounded">Height</td>
+            <td class="rounded">177</td>
+        </tr>
+        <tr class="rounded">
+            <td class="rounded">2</td>
+            <td class="rounded">Weight</td>
+            <td class="rounded">73 kg</td>
+        </tr>
+    </table>
+
+    <h1>HTML Table Sizes</h1>
+    <h2>HTML Table Width</h2>
+    <table style="width: 100%;">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Height</td>
+            <td>177</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Weight</td>
+            <td>73 kg</td>
+        </tr>
+    </table>
+
+    <h2>HTML Table Column Width</h2>
+    <table style="width: 100%;">
+        <tr>
+            <th>ID</th>
+            <th style="width: 70%;">Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Height</td>
+            <td>177</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Weight</td>
+            <td>73 kg</td>
+        </tr>
+    </table>
+
+    <h2>HTML Table Row Height</h2>
+    <table style="width: 100%;">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <tr style="height: 50px">
+            <td>1</td>
+            <td>Height</td>
+            <td>177</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Weight</td>
+            <td>73 kg</td>
+        </tr>
+    </table>
+
+    <h1>HTML Table Headers</h1>
+    <h2>Table Headers</h2>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Dmitry</td>
+            <td>Anufriev</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Ivan</td>
+            <td>Ivanov</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+    <h2>Vertical Table Headers</h2>
+    <table>
+        <tr>
+            <th>Firstname</th>
+            <td>Dmitry</th>
+            <td>Ivan</th>
+        </tr>
+        <tr>
+            <th>Lastname</td>
+            <td>Anufriev</td>
+            <td>Ivanov</td>
+        </tr>
+        <tr>
+            <th>Age</td>
+            <td>21</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+    <h2>Align Table Headers</h2>
+    <table>
+        <tr>
+            <th style="text-align: left;">Firstname</th>
+            <th style="text-align: left;">Lastname</th>
+            <th style="text-align: left;">Age</th>
+        </tr>
+        <tr>
+            <td>Dmitry</td>
+            <td>Anufriev</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Ivan</td>
+            <td>Ivanov</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+    <h2>Header for Multiple Columns</h2>
+    <table>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Dmitry</td>
+            <td>Anufriev</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Ivan</td>
+            <td>Ivanov</td>
+            <td>18</td>
+        </tr>
+    </table>
+
+    <h2>Table Caption</h2>
+    <table>
+        <caption>People</caption>
+        <tr>
+            <th>Firstname</th>
+            <td>Dmitry</th>
+            <td>Ivan</th>
+        </tr>
+        <tr>
+            <th>Lastname</td>
+            <td>Anufriev</td>
+            <td>Ivanov</td>
+        </tr>
+        <tr>
+            <th>Age</td>
+            <td>21</td>
+            <td>18</td>
+        </tr>
+    </table>
+</body>
+</html>
