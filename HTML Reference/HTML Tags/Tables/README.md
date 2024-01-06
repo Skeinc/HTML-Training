@@ -5,3 +5,5 @@ HTMLпредоставляет эффективные средства для с
 Посетите следующие ресурсы, чтобы узнать больше:
 - [Тег table](Tag%20<table>/README.md)
 - [Тег caption](Tag%20<caption>/README.md)
+- [Тег th](Tag%20<th>/README.md)
+- [Тег td](Tag%20<td>/README.md)
