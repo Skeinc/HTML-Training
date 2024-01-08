@@ -7,3 +7,4 @@ HTMLпредоставляет эффективные средства для с
 - [Тег caption](Tag%20<caption>/README.md)
 - [Тег th](Tag%20<th>/README.md)
 - [Тег td](Tag%20<td>/README.md)
+- [Тег tr](Tag%20<tr>/README.md)
