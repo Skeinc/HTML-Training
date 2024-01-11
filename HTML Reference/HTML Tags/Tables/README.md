@@ -10,3 +10,4 @@ HTMLпредоставляет эффективные средства для с
 - [Тег tr](Tag%20<tr>/README.md)
 - [Тег thead](Tag%20<thead>/README.md)
 - [Тег tbody](Tag%20<tbody>/README.md)
+- [Тег tfoot](Tag%20<tfoot>/README.md)
