@@ -12,3 +12,4 @@ HTMLпредоставляет эффективные средства для с
 - [Тег tbody](Tag%20<tbody>/README.md)
 - [Тег tfoot](Tag%20<tfoot>/README.md)
 - [Тег col](Tag%20<col>/README.md)
+- [Тег colgroup](Tag%20<colgroup>/README.md)
