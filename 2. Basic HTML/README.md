@@ -16,3 +16,4 @@ HTML (Hyper Text Markup Language) является основным строит
 - [Иконка в HTML](2.11%20HTML%20Favicon/README.md)
 - [Заголовок страницы в HTML](2.12%20HTML%20Page%20Title/README.md)
 - [Таблицы в HTML](2.13%20HTML%20Tables/README.md)
+- [Списки в HTML](2.14%20HTML%20Lists/README.md)
