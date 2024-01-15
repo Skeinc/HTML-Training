@@ -5,3 +5,4 @@
 Посетите следующие ресурсы, чтобы узнать больше:
 - [Тег menu](Tag%20<menu>/README.md)
 - [Тег ul](Tag%20<ul>/README.md)
+- [Тег ol](Tag%20<ol>/README.md)
