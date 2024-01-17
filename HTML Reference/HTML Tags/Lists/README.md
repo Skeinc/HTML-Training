@@ -8,4 +8,5 @@
 - [Тег ol](Tag%20<ol>/README.md)
 - [Тег li](Tag%20<li>/README.md)
 - [Тег dl](Tag%20<dl>/README.md)
-- [Тег dd](Tag%20<dt>/README.md)
+- [Тег dt](Tag%20<dt>/README.md)
+- [Тег dd](Tag%20<dd>/README.md)
