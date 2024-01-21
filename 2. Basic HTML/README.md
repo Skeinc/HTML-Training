@@ -20,3 +20,4 @@ HTML (Hyper Text Markup Language) является основным строит
 - [Блоки и встроенные элементы в HTML](2.15%20Block%20and%20Inline/README.md)
 - [Div в HTML](2.16%20HTML%20Div/README.md)
 - [Классы в HTML](2.17%20HTML%20Classes/README.md)
+- [Идентификаторы в HTML](2.18%20HTML%20Id/README.md)
