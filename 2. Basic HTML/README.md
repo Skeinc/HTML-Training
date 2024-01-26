@@ -25,3 +25,4 @@ HTML (Hyper Text Markup Language) является основным строит
 - [JavaScript в HTML](2.20%20HTML%20JavaScript/README.md)
 - [Пути к файлам в HTML](2.21%20HTML%20File%20Paths/README.md)
 - [Head в HTML](2.22%20HTML%20Head/README.md)
+- [HTML-макет](2.23%20HTML%20Layout/README.md)
