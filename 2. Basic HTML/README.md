@@ -27,3 +27,4 @@ HTML (Hyper Text Markup Language) является основным строит
 - [Head в HTML](2.22%20HTML%20Head/README.md)
 - [HTML-макет](2.23%20HTML%20Layout/README.md)
 - [HTML-адаптивность](2.24%20HTML%20Responsive/README.md)
+- [HTML компьютерный код](2.25%20HTML%20Computercode/README.md)
