@@ -9,3 +9,4 @@ HTML-теги являются важными элементами для соз
 - [Теги HTML для ссылок](Links/README.md)
 - [Теги HTML для таблиц](Tables/README.md)
 - [Теги HTML для списков](Lists/README.md)
+- [Теги HTML для стилей и семантики](Styles%20and%20Semantics/README.md)
