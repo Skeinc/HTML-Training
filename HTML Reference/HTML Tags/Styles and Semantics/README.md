@@ -5,3 +5,4 @@
 Посетите следующие ресурсы, чтобы узнать больше:
 - [Тег style](Tag%20<style>/README.md)
 - [Тег div](Tag%20<div>/README.md)
+- [Тег span](Tag%20<span>/README.md)
