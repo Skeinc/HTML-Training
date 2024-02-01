@@ -8,3 +8,4 @@
 - [Тег span](Tag%20<span>/README.md)
 - [Тег header](Tag%20<header>/README.md)
 - [Тег hgroup](Tag%20<hgroup>/README.md)
+- [Тег footer](Tag%20<footer>/README.md)
