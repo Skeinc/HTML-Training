@@ -10,3 +10,4 @@
 - [Тег hgroup](Tag%20<hgroup>/README.md)
 - [Тег footer](Tag%20<footer>/README.md)
 - [Тег main](Tag%20<main>/README.md)
+- [Тег section](Tag%20<section>/README.md)
