@@ -7,3 +7,4 @@
 - [Тег div](Tag%20<div>/README.md)
 - [Тег span](Tag%20<span>/README.md)
 - [Тег header](Tag%20<header>/README.md)
+- [Тег hgroup](Tag%20<hgroup>/README.md)
