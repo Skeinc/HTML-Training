@@ -11,3 +11,5 @@
 - [Тег footer](Tag%20<footer>/README.md)
 - [Тег main](Tag%20<main>/README.md)
 - [Тег section](Tag%20<section>/README.md)
+- [Тег search](Tag%20<search>/README.md)
+- [Тег article](Tag%20<article>/README.md)
