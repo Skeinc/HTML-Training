@@ -14,3 +14,4 @@
 - [Тег search](Tag%20<search>/README.md)
 - [Тег article](Tag%20<article>/README.md)
 - [Тег aside](Tag%20<aside>/README.md)
+- [Тег details](Tag%20<details>/README.md)
