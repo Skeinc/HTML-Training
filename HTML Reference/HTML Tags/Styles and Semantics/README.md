@@ -16,3 +16,4 @@
 - [Тег aside](Tag%20<aside>/README.md)
 - [Тег details](Tag%20<details>/README.md)
 - [Тег dialog](Tag%20<dialog>/README.md)
+- [Тег summary](Tag%20<summary>/README.md)
