@@ -35,3 +35,4 @@ HTML (Hyper Text Markup Language) является основным строит
 - [HTML-Эмоджи](2.30%20HTML%20Emojis/README.md)
 - [HTML-Кодировки](2.31%20HTML%20Charset/README.md)
 - [HTML-кодирование URL-адресов](2.32%20HTML%20URL%20Encode/README.md)
+- [HTML versus XHTML](2.33%20HTML%20Versus%20XHTML/README.md)
