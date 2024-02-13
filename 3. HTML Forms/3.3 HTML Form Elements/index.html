@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Elements</title>
+</head>
+<body>
+    <h1>HTML Form Elements</h1>
+    <h2>The input element</h2>
+    <label for="fname">First name:</label>
+    <input type="text" name="fname" id="fname">
+
+    <h2>The label element</h2>
+    <label for="fname">First name:</label>
+    <input type="text" name="fname" id="fname">
+
+    <h2>The select element</h2>
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars" size="2" multiple>
+        <option value="volvo" selected>Volvo</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        <option value="lada">Lada</option>
+    </select>
+
+    <h2>The textarea element</h2>
+    <textarea name="message" cols="30" rows="10">
+        The car was playing in the garden.
+    </textarea>
+
+    <h2>The button element</h2>
+    <button type="button" onclick="alert('Hello, world!')">Click me</button>
+
+    <h2>The fieldset and legend elements</h2>
+    <form action="">
+        <fieldset>
+            <legend>Personalia:</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" value="John">
+
+            <br>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" value="Doe">
+
+            <br>
+
+            <input type="submit" value="Send">
+        </fieldset>
+    </form>
+
+    <h2>The datalist element</h2>
+    <form action="">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+
+    <h2>The output element</h2>
+    <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" name="a" id="a" value="50">
+        100 +
+        <input type="range" name="b" id="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
