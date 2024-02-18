@@ -9,3 +9,4 @@ HTML-формы являются неотъемлемой частью веб-р
 - [Элементы HTML форм](3.3%20HTML%20Form%20Elements/README.md)
 - [Типы ввода HTML](3.4%20HTML%20Input%20Types/README.md)
 - [Атрибуты ввода HTML](3.5%20HTML%20Input%20Attributes/README.md)
+- [Атрибуты ввода форм HTML](3.6%20HTML%20Input%20form%20Attributes/README.md)
