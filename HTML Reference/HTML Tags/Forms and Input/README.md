@@ -5,3 +5,4 @@
 Посетите следующие ресурсы, чтобы узнать больше:
 - [Тег form](Tag%20<form>/README.md)
 - [Тег input](Tag%20<input>/README.md)
+- [Тег textarea](Tag%20<textarea>/README.md)
