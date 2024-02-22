@@ -8,3 +8,4 @@
 - [Тег textarea](Tag%20<textarea>/README.md)
 - [Тег button](Tag%20<button>/README.md)
 - [Тег select](Tag%20<select>/README.md)
+- [Тег optgroup](Tag%20<optgroup>/README.md)
