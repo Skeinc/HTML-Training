@@ -12,3 +12,4 @@
 - [Тег option](Tag%20<option>/README.md)
 - [Тег label](Tag%20<label>/README.md)
 - [Тег fieldset](Tag%20<fieldset>/README.md)
+- [Тег legend](Tag%20<legend>/README.md)
