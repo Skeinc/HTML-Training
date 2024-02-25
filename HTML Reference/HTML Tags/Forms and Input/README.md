@@ -10,3 +10,4 @@
 - [Тег select](Tag%20<select>/README.md)
 - [Тег optgroup](Tag%20<optgroup>/README.md)
 - [Тег option](Tag%20<option>/README.md)
+- [Тег label](Tag%20<label>/README.md)
