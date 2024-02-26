@@ -14,3 +14,4 @@
 - [Тег fieldset](Tag%20<fieldset>/README.md)
 - [Тег legend](Tag%20<legend>/README.md)
 - [Тег datalist](Tag%20<datalist>/README.md)
+- [Тег output](Tag%20<output>/README.md)
