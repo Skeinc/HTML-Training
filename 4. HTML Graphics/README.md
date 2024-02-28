@@ -5,3 +5,4 @@ HTML, или HyperText Markup Language, является основой веб-�
 Посетите следующие ресурсы, чтобы узнать больше:
 
 - [HTML canvas](4.1%20HTML%20Canvas/README.md)
+- [HTML SVG](4.2%20HTML%20SVG/README.md)
