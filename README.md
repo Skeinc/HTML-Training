@@ -7,4 +7,5 @@ HTML - это стандартный язык гипертекстовой ра�
 - [Базовый HTML](2.%20Basic%20HTML/README.md)
 - [HTML формы](3.%20HTML%20Forms/README.md)
 - [HTML графика](4.%20HTML%20Graphics/README.md)
+- [HTML медиа](5.%20HTML%20Media/README.md)
 - [Справочник по HTML](HTML%20Reference/README.md)
