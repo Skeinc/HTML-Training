@@ -6,3 +6,4 @@ HTML Media предоставляет мощные инструменты для
 - [HTML Медиа](5.1%20HTML%20Медиа/README.md)
 - [HTML Видео](5.2%20HTML%20%20Видео/README.md)
 - [HTML Аудио](5.3%20HTML%20Аудио/README.md)
+- [HTML Плагины](5.4%20HTML%20Plug-ins/README.md)
