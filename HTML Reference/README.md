@@ -6,3 +6,4 @@
 - [HTML теги](HTML%20Tags/README.md)
 - [HTML атрибуты](HTML%20Attributes/README.md)
 - [HTML глобальные атрибуты](HTML%20Global%20Attributes/README.md)
+- [HTML атрибуты событий](HTML%20Events/README.md)
