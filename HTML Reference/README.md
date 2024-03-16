@@ -8,3 +8,4 @@
 - [HTML глобальные атрибуты](HTML%20Global%20Attributes/README.md)
 - [HTML атрибуты событий](HTML%20Events/README.md)
 - [HTML Canvas](HTML%20Canvas/README.md)
+- [HTML аудио и видео](HTML%20Audio%20and%20Video/README.md)
