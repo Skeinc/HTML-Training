@@ -10,3 +10,4 @@
 - [HTML Canvas](HTML%20Canvas/README.md)
 - [HTML аудио и видео](HTML%20Audio%20and%20Video/README.md)
 - [HTTP Статусы Сообщений](HTTP%20Status%20Messages/README.md)
+- [Методы HTTP-запросов](HTTP%20Request%20Methods/README.md)
