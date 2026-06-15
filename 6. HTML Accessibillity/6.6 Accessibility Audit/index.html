@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аудит a11y — пример</title>
+    <style>
+        .good { border-left: 4px solid #16a34a; padding-left: 1rem; margin: 1rem 0; }
+        .bad { border-left: 4px solid #dc2626; padding-left: 1rem; margin: 1rem 0; opacity: 0.7; }
+        label { display: block; margin-top: 0.5rem; }
+    </style>
+</head>
+<body>
+    <h1>До и после: доступность</h1>
+
+    <section class="bad" aria-label="Плохой пример">
+        <h2>❌ Плохо</h2>
+        <!-- Нет skip link, нет label, img без alt, кнопка без type -->
+        <input type="text" placeholder="Email">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect fill='%23ccc' width='40' height='40'/%3E%3C/svg%3E">
+        <div onclick="alert('click')">Нажми</div>
+    </section>
+
+    <section class="good" aria-label="Хороший пример">
+        <h2>✅ Хорошо</h2>
+        <label for="email-ok">Email</label>
+        <input type="email" id="email-ok" name="email" required>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect fill='%234a90d9' width='40' height='40'/%3E%3C/svg%3E"
+            alt="Синий квадрат — декоративный маркер">
+        <button type="button">Отправить</button>
+    </section>
+</body>
+</html>

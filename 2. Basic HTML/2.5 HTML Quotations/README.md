@@ -1,75 +1,50 @@
-# Цитаты и элементы цитирования в HTML
+# Цитаты в HTML
 
-Веб-страницы часто включают цитаты, которые помогают подчеркнуть важность определенных высказываний или текстов. 
+Длинные и короткие цитаты, аббревиатуры, контакты и направление текста.
 
-## HTML тег blockquote для цитат
+← [Базовый HTML](../README.md) · [Форматирование](../2.4%20HTML%20Text%20Formatting/README.md)
 
-Элемент ``<blockqoute>`` используется для выделения длинных цитат, которые распологаются в отдельном блоке. Этот элемент помогает создать визуальное отличие между цитатой и основным текстом страницы:
+- [Цитаты](#цитаты)
+- [Справочные теги](#справочные-теги)
+- [Дальше](#дальше)
 
-```
-<p>Here is a quote from WWF's website:</p>
-<blockquote cite="http://www.worldwildlife.org/who/index.html">
-    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+## Цитаты
+
+**Блочная цитата** — отдельный блок, часто с отступом:
+
+```html
+<blockquote cite="https://example.com/article">
+    <p>Текст цитаты из внешнего источника.</p>
 </blockquote>
 ```
 
-## HTML тег q для коротких цитат
+**Встроенная цитата** — внутри предложения; браузер обычно добавляет кавычки:
 
-Элемент ``<q>`` предназначен для коротких цитат, которые выстраиваются непосредственно в текст. Браузеры автоматически добавляют кавычки вокруг текста, помеченного этим элементом:
-
-```
-<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+```html
+<p>Как сказал автор: <q>краткая цитата в строке</q>.</p>
 ```
 
-## HTML тег abbr для аббревиатур
+Атрибут `cite` на `blockquote`/`q` указывает URL источника (не обязателен, полезен для семантики).
 
-Элемент ``<abbr>`` определяет аббревиатуру или акроним, например "HTML", "CSS" и т.д. Маркировка сокращений может дать полезную информацию браузерам, перевод системы и поисковые системы. Используйте глобальный атрибут заголовка, чтобы показать описание к аббревиатуре при наведении курсора мыши на элемент:
+## Справочные теги
 
-```
-<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-```
+| Тег | Назначение |
+|-----|------------|
+| `<abbr title="…">` | Аббревиатура с расшифровкой при наведении |
+| `<address>` | Контакты автора/организации (не произвольный адрес на карте) |
+| `<cite>` | Название произведения, статьи, работы |
+| `<bdo dir="rtl">` | Принудительное направление текста (RTL/LTR) |
 
-## HTML тег address для контактной информации
-
-Элемент ``<address>`` определяет контактную информацию автора/владельца документа или статьи. Контактная информация может представлять собой адрес электронной почты, URL-адрес, физический адрес, телефон, номер, адрес социальной сети и т.д. Текст в элементе ``<address>`` обычно отображается курсивом и браузеры всегда добавляют разрыв строки до и после элемента ``<address>``:
-
-```
+```html
+<p>Стандарт <abbr title="HyperText Markup Language">HTML</abbr>.</p>
 <address>
-    Written by John Doe.<br>
-    Visit us at:<br>
-    Example.com<br>
-    Box 564, Disneyland<br>
-    USA
+    Написал: Иван Иванов<br>
+    <a href="mailto:ivan@example.com">ivan@example.com</a>
 </address>
+<p>Картина <cite>Звёздная ночь</cite> — Ван Гог.</p>
 ```
 
-## HTML тег cite для названия работ
+## Дальше
 
-Элемент ``<cite>`` используется для указания источника цитаты или названия произведения. Обычно он помещается внутрь элементов цитирования:
-
-```
-<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-```
-
-## HTML тег bdo для двунаправленной блокировки
-
-Элемент ``<bdo>`` используйте для переопределения текущего направления текста:
-
-```
-<bdo dir="rtl">This text will be written from right to left.</bdo>
-```
-
-## HTML атрибут cite
-
-Элементы цитирования также могут содержать атрибут ``cite``, который указывает на источник цитаты. Это полезно для обеспечения доступности дополнительной информации:
-
-```
-<p>Here is a quote from WWF's website:</p>
-<blockquote cite="http://www.worldwildlife.org/who/index.html">
-    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
-</blockquote>
-```
-
-## Заключение
-
-Цитаты играют важную роль в веб-разработке, помогая выделить важные и многозначительные высказывания. С использованием элементов цитирования и атрибута ``cite`` вы можете структурировать цитаты на своих веб-страницах, делая контент более читаемым и информативным.
+- [Семантика](../2.26%20HTML%20Semantics/README.md)
+- [Сущности](../2.28%20HTML%20Entities/README.md) — кавычки и спецсимволы в тексте

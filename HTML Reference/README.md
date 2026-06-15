@@ -1,13 +1,27 @@
-# HTML Справочник
+# HTML Reference
 
-Справочник по HTML является важным инструментом для веб-разработчиков и тех, кто занимается созданием веб-страниц. Этот ресурс предоставляет информацию о структуре и использовании различных элементов, атрибутов и т.д. в HTML.
+Краткий справочник по тегам и атрибутам. Подробные уроки — в разделах серии выше.
 
-Посетите следующие ресурсы, чтобы узнать больше:
-- [HTML теги](HTML%20Tags/README.md)
-- [HTML атрибуты](HTML%20Attributes/README.md)
-- [HTML глобальные атрибуты](HTML%20Global%20Attributes/README.md)
-- [HTML атрибуты событий](HTML%20Events/README.md)
-- [HTML Canvas](HTML%20Canvas/README.md)
-- [HTML аудио и видео](HTML%20Audio%20and%20Video/README.md)
-- [HTTP Статусы Сообщений](HTTP%20Status%20Messages/README.md)
-- [Методы HTTP-запросов](HTTP%20Request%20Methods/README.md)
+- [Основы SEO](../7.%20SEO%20Basics/7.1%20SEO%20Basics/README.md)
+
+## Теги
+
+- [HTML Tags](HTML%20Tags/README.md) — все теги по категориям
+
+## Атрибуты
+
+- [Глобальные атрибуты](HTML%20Global%20Attributes/README.md) — `class`, `id`, `data-*`…
+- [Атрибуты элементов](HTML%20Attributes/README.md) — сводная таблица
+- [События](HTML%20Events/README.md) — обзор (в JS предпочтительнее `addEventListener`)
+
+## Медиа и графика
+
+- [Canvas](HTML%20Canvas/README.md)
+- [Audio / Video](HTML%20Audio%20and%20Video/README.md)
+
+## HTTP (см. также серию Интернет)
+
+- [Методы запросов](HTTP%20Request%20Methods/README.md) → [HTTP](../../Internet/2.%20What%20is%20HTTP%3F/README.md)
+- [Коды ответов](HTTP%20Status%20Messages/README.md) → [HTTP](../../Internet/2.%20What%20is%20HTTP%3F/README.md)
+
+Полная документация: [MDN HTML element reference](https://developer.mozilla.org/ru/docs/Web/HTML/Element).

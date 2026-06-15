@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Popover</title>
+    <style>
+        [popover] {
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        #menu[popover] {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Popover</h1>
+
+    <p>
+        <button type="button" popovertarget="hint">Что такое popover?</button>
+    </p>
+    <div id="hint" popover>
+        Popover — нативный всплывающий блок. Клик снаружи закрывает его (режим <code>auto</code>).
+    </div>
+
+    <p>
+        <button type="button" popovertarget="menu">Меню</button>
+    </p>
+    <nav id="menu" popover>
+        <a href="#">Главная</a>
+        <a href="#">Профиль</a>
+        <a href="#">Выход</a>
+    </nav>
+</body>
+</html>

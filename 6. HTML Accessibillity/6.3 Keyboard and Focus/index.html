@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клавиатура и фокус</title>
+    <style>
+        .skip-link {
+            position: absolute;
+            left: -9999px;
+        }
+        .skip-link:focus {
+            left: 1rem;
+            top: 1rem;
+            z-index: 100;
+            padding: 0.5rem 1rem;
+            background: #2563eb;
+            color: white;
+        }
+        :focus-visible {
+            outline: 2px solid #2563eb;
+            outline-offset: 2px;
+        }
+        nav a { margin-right: 1rem; }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Перейти к содержимому</a>
+
+    <header>
+        <nav aria-label="Главное меню">
+            <a href="#">Главная</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Клавиатурная навигация</h1>
+        <p>Нажмите Tab с начала страницы: сначала skip link, потом меню, потом кнопка.</p>
+        <button type="button">Пример кнопки</button>
+    </main>
+</body>
+</html>

@@ -1,15 +1,16 @@
-# Теги HTML для таблиц
+# Таблицы
 
-HTMLпредоставляет эффективные средства для создания и представления табличных данных на веб-страницах. Таблицы в HTML используются для организации информации в виде строк и столбцов, что делает их идеальным инструментом для представления различных данных, таких как расписание, данные о продуктах, результаты и много другое.
+← [HTML Tags](../README.md) · [Справочник](../../README.md)
 
-Посетите следующие ресурсы, чтобы узнать больше:
-- [Тег table](Tag%20<table>/README.md)
-- [Тег caption](Tag%20<caption>/README.md)
-- [Тег th](Tag%20<th>/README.md)
-- [Тег td](Tag%20<td>/README.md)
-- [Тег tr](Tag%20<tr>/README.md)
-- [Тег thead](Tag%20<thead>/README.md)
-- [Тег tbody](Tag%20<tbody>/README.md)
-- [Тег tfoot](Tag%20<tfoot>/README.md)
-- [Тег col](Tag%20<col>/README.md)
-- [Тег colgroup](Tag%20<colgroup>/README.md)
+| Тег | Описание |
+|-----|----------|
+| [`caption`](Tag%20%3Ccaption%3E/README.md) | Заголовок таблицы |
+| [`col`](Tag%20%3Ccol%3E/README.md) | Столбец в colgroup |
+| [`colgroup`](Tag%20%3Ccolgroup%3E/README.md) | Группа столбцов для стилей |
+| [`table`](Tag%20%3Ctable%3E/README.md) | Таблица |
+| [`tbody`](Tag%20%3Ctbody%3E/README.md) | Тело таблицы |
+| [`td`](Tag%20%3Ctd%3E/README.md) | Ячейка данных |
+| [`tfoot`](Tag%20%3Ctfoot%3E/README.md) | Подвал таблицы |
+| [`th`](Tag%20%3Cth%3E/README.md) | Ячейка-заголовок |
+| [`thead`](Tag%20%3Cthead%3E/README.md) | Заголовок таблицы |
+| [`tr`](Tag%20%3Ctr%3E/README.md) | Строка таблицы |

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Dialog</title>
+    <style>
+        dialog {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 1.5rem;
+            max-width: 320px;
+        }
+        dialog::backdrop {
+            background: rgba(0, 0, 0, 0.4);
+        }
+        dialog form {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: flex-end;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Диалоговое окно</h1>
+    <p>Нажмите кнопку, чтобы открыть модальное подтверждение.</p>
+    <button type="button" id="open">Удалить черновик</button>
+    <p id="result"></p>
+
+    <dialog id="confirm">
+        <h2>Удалить черновик?</h2>
+        <p>Файл нельзя будет восстановить.</p>
+        <form method="dialog">
+            <button value="cancel">Отмена</button>
+            <button value="ok">Удалить</button>
+        </form>
+    </dialog>
+
+    <script>
+        const dialog = document.getElementById('confirm');
+        const result = document.getElementById('result');
+
+        document.getElementById('open').addEventListener('click', () => dialog.showModal());
+
+        dialog.addEventListener('close', () => {
+            result.textContent = dialog.returnValue === 'ok'
+                ? 'Черновик удалён.'
+                : 'Отменено.';
+        });
+    </script>
+</body>
+</html>

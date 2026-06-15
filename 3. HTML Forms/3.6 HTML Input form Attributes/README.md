@@ -1,161 +1,83 @@
-# Атрибуты форм ввода HTML
+# Атрибуты `form*` у `<input>`
 
-Атрибуты форм ввода HTML играют ключевую роль в улучшении функциональности и внешнего вида элементов форм на веб-страницах. Понимание и использование этих атрибутов позволяют разработчикам создавать более интерактивные и удобные формы.
+Связь поля или кнопки submit с формой и переопределение параметров отправки.
 
-## Атрибут формы
+← [HTML Forms](../README.md) · [Атрибуты form](../3.2%20HTML%20Form%20Attributes/README.md) · [Атрибуты input](../3.5%20HTML%20Input%20Attributes/README.md)
 
-Входной ``form`` атрибут указывает форму, ``<input>`` к которой принадлежит элемент. Значение этого атрибуты должно быть равно атрибуту id элемента ``<form>``, которому он принадлежит.
+- [form](#form)
+- [formaction, formmethod, formenctype, formtarget](#formaction-formmethod-formenctype-formtarget)
+- [formnovalidate](#formnovalidate)
+- [Когда нужно](#когда-нужно)
 
-```
-<form action="" id="form">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
+Работают в основном с `type="submit"` и `type="image"`, кроме `form`.
 
-    <input type="submit" value="Send">
+## form
+
+Поле **вне** тега `<form>`, но участвует в его отправке:
+
+```html
+<form id="profile-form" action="/save" method="post">
+    <input name="name" required>
+    <button type="submit">Сохранить</button>
 </form>
 
-<label for="lname">Last name:</label>
-<input type="text" id="lname" name="lname" form="form">
+<label for="bio">О себе (вне формы):</label>
+<textarea id="bio" name="bio" form="profile-form"></textarea>
 ```
 
-## Атрибут формирования
+`form` на input = `id` на `<form>`.
 
-Атрибут ввода ``formaction`` указывает URL-адрес файла, который будет обрабатывать вводимые данные при отправке формы.
+## formaction, formmethod, formenctype, formtarget
 
-**Примечание:** Этот атрибут переопределяет ``action`` атрибут элемента ``<form>``.
+Переопределяют атрибуты `<form>` **для конкретной кнопки** submit:
 
-Атрибут ``formaction`` работает со следующими типами ввода: submit и image.
+```html
+<form action="/default" method="post">
+    <input name="title" required>
 
-```
-<form action="">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-
-    <input type="submit" value="Send">
-    <input type="submit" formaction="/action_page.php" value="Send as Admin">
-</form>
-```
-
-## Атрибут formenctype
-
-Атрибут ввода ``formenctype`` указывает, как данные формы должны быть закодированы при отправке (только для форм с методом POST).
-
-**Примечание:** Этот атрибут переопределяет атрибут enctype элемента ``<form>``.
-
-Атрибут ``formenctype`` работает со следующими типами ввода: submit и image.
-
-В качестве примера - форма с двумя кнопками отправки. Первый отправляет данные формы с кодировкой по умолчанию, второй отправляет данные формы, закодированные как "multipart/form-data":
-
-```
-<form action="" method="post">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-
-    <input type="submit" value="Send">
-    <input type="submit" formenctype="multipart/form-data" value="Send as Multipart/form-data">
+    <button type="submit">Обычная отправка</button>
+    <button type="submit" formaction="/draft" formmethod="post">
+        Сохранить черновик
+    </button>
+    <button type="submit" formaction="/preview" formtarget="_blank">
+        Предпросмотр
+    </button>
 </form>
 ```
 
-## Атрибут formmethod
+| Атрибут | Переопределяет |
+|---------|----------------|
+| `formaction` | `action` |
+| `formmethod` | `method` (`get` / `post`) |
+| `formenctype` | `enctype` (например `multipart/form-data`) |
+| `formtarget` | `target` (`_blank` и др.) |
 
-Атрибут ввода ``formmethod`` определяет метод HTTP для отправки данных формы на URL-адрес действия.
+## formnovalidate
 
-**Примечание:** Этот атрибут переопределяет атрибут метода элемента ``<form>``.
+Отправить **без** HTML5-валидации этой кнопкой:
 
-Атрибут ``formmethod`` работает со следующими типами ввода: submit и image.
-
-Данные формы могут быть отправлены как переменные URL (method GET) или как почтовая транзакция HTTP (method POST).
-
-**Примечания к методу GET:**
-
-- Этот метод добавляет данные формы к URL-адресу в парах имя/значение.
-- Этот метод полезен для отправки форм, когда пользователь хочет добавить результат в закладки.
-- Существует ограничение на объем данных, которые вы можете разместить в URL-адресе (различается в зависимости от браузера), поэтому вы не можете быть уверены, что все данные формы будут правильно переданы.
-- Никогда не используйте метод GET для передачи конфиденциальной информации (Пароль или другая конфиденциальная информация будет видна в адресной строке браузера).
-
-**Примечания к методу POST:**
-
-- Этот метод отправляет данные формы как почтовую транзакцию HTTP.
-- Отправленные формы с методом POST нельзя добавить в закладки.
-- Метод POST более надежен и безопасен, чем GET, а POST не имеет ограничений по размеру.
-
-Например, форма с двумя кнопками отправки. Первый отправляет данные формы с помощью метода GET, второй отправляет данные формы с помощью метода POST:
-
-```
-<form action="" method="get">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-
-    <input type="submit" value="Send using GET">
-    <input type="submit" formmethod="post" value="Send using POST">
+```html
+<form>
+    <input type="email" name="email" required>
+    <button type="submit">Отправить</button>
+    <button type="submit" formnovalidate>Сохранить без проверки</button>
 </form>
 ```
 
-## Атрибут formtarget
+Переопределяет `novalidate` на форме для одной кнопки.
 
-Входной ``formtarget`` атрибут указывает имя или ключевое слово, указывающее, где отображать ответ, полученный после отправки формы.
+## Когда нужно
 
-**Примечание:** Этот атрибут переопределяет целевой атрибут элемента ``<form>``.
+| Сценарий | Атрибут |
+|----------|---------|
+| Поле визуально вне `<form>` (сложная вёрстка) | `form` |
+| «Сохранить» vs «Опубликовать» на разные URL | `formaction` |
+| Черновик без строгой валидации | `formnovalidate` |
+| Открыть результат в новой вкладке | `formtarget="_blank"` |
 
-Атрибут ``formtarget`` работает со следующими типами ввода: submit и image.
+В большинстве форм достаточно одной кнопки и атрибутов на `<form>`.
 
-Пример, форма с двумя кнопками отправки и разными целевыми окнами:
+## Дальше
 
-```
-<form action="">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-
-    <input type="submit" value="Send">
-    <input type="submit" formtarget="_blank" value="Send to a new window/tab">
-</form>
-```
-
-## Атрибут formnovalidate
-
-Атрибут ввода ``formnovalidate`` указывает, что элемент ``<input>`` не должен проверяться при отправке.
-
-**Примечание:** Этот атрибут переопределяет атрибут novalidate элемента ``<form>``.
-
-Атрибут ``formnovalidate`` работает со следующими типами ввода: submit.
-
-```
-<form action="">
-    <label for="email">Enter your email:</label>
-    <input type="email" id="email" name="email"><br><br>
-
-    <input type="submit" value="Send">
-    <input type="submit" formnovalidate="formnovalidate" value="Send without validation">
-</form>
-```
-
-## Атрибут novalidate
-
-Атрибут ``novalidate`` есть ``<form>`` атрибут.
-
-Если присутствует, novalidate указывает, что все данные формы не должны проверяться при отправке.
-
-```
-<form action="" novalidate>
-    <label for="email">Enter your email:</label>
-    <input type="email" id="email" name="email"><br><br>
-
-    <input type="submit" value="Send">
-</form>
-```
-
-## Заключение
-
-Эти атрибуты ввода HTML предоставляют разработчикам набор инструментов для создания более динамичных и удобных форм. Используя эти атрибуты, веб-разработчики могут настраивать элементы формы для удовлетворения конкретных требований и улучшения общего пользовательского опыта. Буть то предоставление подсказок, соблюдение форматов ввода или управление взаимодействием пользователя, понимание этих атрибутов является неотъемлемым элементов эффективной веб-разработки.
+- [Атрибуты `<form>`](../3.2%20HTML%20Form%20Attributes/README.md)
+- [HTTP](../../Internet/2.%20What%20is%20HTTP%3F/README.md)

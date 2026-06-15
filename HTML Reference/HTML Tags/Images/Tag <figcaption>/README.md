@@ -1,41 +1,18 @@
-# Тег figcaption
+# `<figcaption>`
 
-Тег ``<figcaption>`` является частью группы тегов, используемых для разметки элементов веб-страницы. Тег ``<figcaption>`` предназначен для добавления подписи к содержимому элемента ``<figure>``. Тег ``<figcaption>`` используется вместе с тегом ``<figure>``, который представляет собой контейнер для встраивания любого контета, такого как изображения, графики или видео, и его описания.
+Подпись к figure.
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag figcaption</title>
-</head>
-<body>
-    <figure>
-        <img src="../image.jpg" alt="leaves in autumn">
-        <figcaption>Fig.1 - Leaves in autumn, Russia.</figcaption>
-    </figure>
-</body>
-</html>
+← [Изображения](../README.md) · [Справочник](../../README.md)
+
+Парный элемент.
+
+По умолчанию: `display: block`.
+
+```html
+<figcaption>…</figcaption>
 ```
 
-Тег ``<figcaption>`` определяет заголовок для элемента ``<figure>``. Элемент ``<figcaption>`` может быть размещен как первый или последний дочерний элемент в теге ``<figure>``.
+Пример — в [`index.html`](index.html).
 
-## Примечания
+- [MDN](https://developer.mozilla.org/ru/docs/Web/HTML/Element/figcaption)
 
-- Тег ``<figcaption>`` поддерживает глобальные атрибуты в HTML.
-- Тег ``<figcaption>`` поддерживает атрибуты событий в HTML.
-
-## Настройки CSS по умолчанию
-
-Большинство браузеров отображают элемент ``<figcaption>`` со следующими значениями по умолчанию:
-
-```
-figcaption {
-    display: block;
-}
-```
-
-## Заключение
-
-Тег ``<figcaption>`` в HTML является важным инструментом для добавления подписей к графическому контенту на веб-страницах. Он улучшает доступность и семантику страницы, а также предоставляет возможность стилизации с использованием CSS.

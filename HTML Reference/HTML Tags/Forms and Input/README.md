@@ -1,17 +1,18 @@
-# Формы и поля ввода
+# Формы и ввод
 
-Формы и поля ввода - это важные элементы веб-разработки, которые позволяют взаимодействовать с пользователями, собирать информацию и отправлять ее на сервер для обработки. Формы предоставляют средство для ввода данных, а теги Input определяют различные типы полей ввода.
+← [HTML Tags](../README.md) · [Справочник](../../README.md)
 
-Посетите следующие ресурсы, чтобы узнать больше:
-- [Тег form](Tag%20<form>/README.md)
-- [Тег input](Tag%20<input>/README.md)
-- [Тег textarea](Tag%20<textarea>/README.md)
-- [Тег button](Tag%20<button>/README.md)
-- [Тег select](Tag%20<select>/README.md)
-- [Тег optgroup](Tag%20<optgroup>/README.md)
-- [Тег option](Tag%20<option>/README.md)
-- [Тег label](Tag%20<label>/README.md)
-- [Тег fieldset](Tag%20<fieldset>/README.md)
-- [Тег legend](Tag%20<legend>/README.md)
-- [Тег datalist](Tag%20<datalist>/README.md)
-- [Тег output](Tag%20<output>/README.md)
+| Тег | Описание |
+|-----|----------|
+| [`button`](Tag%20%3Cbutton%3E/README.md) | Кнопка |
+| [`datalist`](Tag%20%3Cdatalist%3E/README.md) | Подсказки для input |
+| [`fieldset`](Tag%20%3Cfieldset%3E/README.md) | Группа полей формы |
+| [`form`](Tag%20%3Cform%3E/README.md) | Форма ввода данных |
+| [`input`](Tag%20%3Cinput%3E/README.md) | Поле ввода |
+| [`label`](Tag%20%3Clabel%3E/README.md) | Подпись поля формы |
+| [`legend`](Tag%20%3Clegend%3E/README.md) | Заголовок fieldset |
+| [`optgroup`](Tag%20%3Coptgroup%3E/README.md) | Группа option |
+| [`option`](Tag%20%3Coption%3E/README.md) | Пункт select |
+| [`output`](Tag%20%3Coutput%3E/README.md) | Результат вычисления |
+| [`select`](Tag%20%3Cselect%3E/README.md) | Выпадающий список |
+| [`textarea`](Tag%20%3Ctextarea%3E/README.md) | Многострочный ввод |

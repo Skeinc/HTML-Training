@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress и Meter</title>
+</head>
+<body>
+    <h1>Progress и Meter</h1>
+
+    <h2>Загрузка (progress)</h2>
+    <label for="upload">Загрузка файла:</label>
+    <progress id="upload" value="0" max="100">0%</progress>
+
+    <h2>Место на диске (meter)</h2>
+    <label for="disk">Диск C:</label>
+    <meter id="disk" value="6" min="0" max="10" low="3" high="8" optimum="2">6 из 10</meter>
+
+    <h2>Неопределённый progress</h2>
+    <progress>Идёт обработка…</progress>
+
+    <script>
+        const upload = document.getElementById('upload');
+        let value = 0;
+        const timer = setInterval(() => {
+            value += 5;
+            upload.value = value;
+            if (value >= 100) clearInterval(timer);
+        }, 200);
+    </script>
+</body>
+</html>

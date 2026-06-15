@@ -1,135 +1,104 @@
-# HTML формы
+# Основы HTML-форм
 
-HTML-формы являются неотъемлемой частью веб-разработки, служа ключевым мостом между пользователями и веб-сайтами. Независимо от того, отправляете ли вы поисковый запрос, создаете учетную запись или осуществляете онлайн-покупку, HTML-формы позволяют пользователям взаимодействовать с веб-сайтами динамичным и персонализированным образом.
+Форма собирает ввод пользователя и отправляет его на сервер (или обрабатывает на клиенте через JS).
 
-Форма HTML используется для сбора вводимых пользователем данных. ПОльзовательский ввод чаще всего отправляется на сервер для обработки.
+← [HTML Forms](../README.md) · [Атрибуты form](../3.2%20HTML%20Form%20Attributes/README.md) · [Элементы](../3.3%20HTML%20Form%20Elements/README.md)
 
-## Элемент form
+- [Контейнер `<form>`](#контейнер-form)
+- [`<input>` и `name`](#input-и-name)
+- [`<label>`](#label)
+- [Radio и checkbox](#radio-и-checkbox)
+- [Отправка](#отправка)
+- [Дальше](#дальше)
 
-Элемент HTML ``<form>`` используется для создания HTML-формы для ввода данных пользователем:
+## Контейнер `<form>`
 
-```
-<form action="">
-    <!-- form elements -->
+```html
+<form action="/search" method="get">
+    <!-- поля ввода -->
+    <button type="submit">Найти</button>
 </form>
 ```
 
-Элемент ``<form>`` представляет собой контейнер для различных типов элементов ввода, таких как: текстовые поля, флажки, переключатели, кнопки отправки и т.д.
+| Атрибут | Назначение |
+|---------|------------|
+| `action` | URL обработчика (куда уйдут данные) |
+| `method` | `get` или `post` — см. [атрибуты form](../3.2%20HTML%20Form%20Attributes/README.md) |
 
-## Элемент input
+Без `action` отправка идёт на текущий URL.
 
-Элемент HTML ``<input>`` является наиболее часто используемым элементов формы. Элемент ``<input>`` может отображаться разными способами, в зависимости от ``type`` атрибута.
+## `<input>` и `name`
 
-Вот некоторые предметы:
+`<input>` — основной элемент ввода. Вид зависит от `type` (по умолчанию `text`).
 
-```
-<input type="text" name="" id="">
-<input type="radio" name="" id="">
-<input type="checkbox" name="" id="">
-<input type="submit" name="" id="">
-<input type="button" name="" id="">
-```
-
-## Текстовые поля
-
-Определяет ``<input type="text">`` однострочное поле ввода для ввода текста.
-
-Форма с полями ввода текста:
-
-```
-<form action="">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname">
-</form>
+```html
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
 ```
 
-**Примечание:** Сама форма не видна. Также обратите внимание, что ширина поля ввода по умолчанию составляет 20 символов.
+**`name` обязателен для отправки:** без него значение поля не попадёт в запрос.
 
-## Элемент label
-
+```html
+<!-- уйдёт: ?email=user%40mail.ru -->
+<input type="email" name="email" value="user@mail.ru">
 ```
-<label for="phone">Phone:</label><br>
+
+`id` связывает поле с `<label>` и нужен для JS — не путать с `name`.
+
+## `<label>`
+
+```html
+<label for="phone">Телефон:</label>
 <input type="tel" id="phone" name="phone">
 ```
 
-Обратите внимание на использование элемента ``<label>`` в приведенном выше примере. Тег ``<label>`` определяет метку для многих элементов формы. Этот ``<label>`` элемент полезен для пользователей программ чтения с экрана, поскольку программа чтения с экрана будет читать вслух метку, когда пользователь фокусируется на элементе ввода.
+- Скринридер озвучивает подпись при фокусе
+- Клик по тексту label фокусирует/переключает связанное поле
+- `for` на label = `id` на input
 
-Тег ``<label>`` также помогает пользователям, у которых возникают трудности с нажатием на очень маленькие области (например, переключатели или флажки), поскольку, когда пользователь щелкает текст внутри элемента ``<label>``, он переключает переключатель/флажок. Атрибут ``for`` тега ``<label>`` должен быть равен ``id`` атрибуту элемента ``<input>``, чтобы связать их вместе.
+Альтернатива — обернуть input внутрь label:
 
-## Радио-кнопки
-
-Определяет ``<input type="radio">`` переключатель. Радиокнопки позволяют пользователю выбрать один из ограниченного числа вариантов.
-
-Форма с переключателями:
-
-```
-<form action="">
-    <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="html">HTML</label><br>
-
-    <input type="radio" id="css" name="fav_language" value="CSS">
-    <label for="css">CSS</label><br>
-
-    <input type="radio" name="fav_language" id="js" value="JavaScript">
-    <label for="js">JavaScript</label>
-</form>
+```html
+<label>
+    <input type="checkbox" name="agree" value="yes">
+    Согласен с условиями
+</label>
 ```
 
-## Флажки
+## Radio и checkbox
 
-Определяет ``<input type="checkbox">`` флажок. Флажки позволяют пользователю выбирать ноль или больше вариантов из ограниченного числа вариантов.
+**Radio** — один вариант из группы (общий `name`):
 
-Форма с флажками:
-
-```
-<form action="">
-    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-    <label for="vehicle1">I have a bike</label><br>
-
-    <input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
-    <label for="vehicle2">I have a car</label><br>
-
-    <input type="checkbox" name="vehicle3" id="vehicle3" value="Boat">
-    <label for="vehicle3">I have a boat</label><br>
-</form>
+```html
+<fieldset>
+    <legend>Любимый язык</legend>
+    <label><input type="radio" name="lang" value="html"> HTML</label>
+    <label><input type="radio" name="lang" value="css"> CSS</label>
+    <label><input type="radio" name="lang" value="js"> JavaScript</label>
+</fieldset>
 ```
 
-## Кнопка отправить
+**Checkbox** — ноль или несколько вариантов:
 
-Определяет ``input type="submit"`` кнопку для отправки данных формы обработчику формы. Форма обработчик обычно представляет собой файл на сервере со сценарием обработки входных данных. Обработчик формы указан в атрибуте формы ``action``.
-
-Форма с кнопками отправки:
-
-```
-<form action="">
-    <label for="fname">First name:</label><br>
-    <input type="text" name="fname" id="fname" value="John"><br>
-
-    <label for="lname">Last name:</label><br>
-    <input type="text" name="lname" id="lname" value="Doe"><br><br>
-
-    <input type="submit" value="Send">
-</form>
+```html
+<label><input type="checkbox" name="notify" value="email"> Email</label>
+<label><input type="checkbox" name="notify" value="sms"> SMS</label>
 ```
 
-## Атрибут имени для input
+## Отправка
 
-Обратите внимание, что каждое поле ввода должно иметь ``name`` атрибут для отправки. Если ``name`` атрибут опущен, значение поля ввода не будет отправлено вообще.
-
-Пример:
-
-```
-<form action="">
-    <label for="fname">First name:</label><br>
-    <input type="text" name="fname" id="fname" value="John"><br>
-
-    <input type="submit" value="Send">
-</form>
+```html
+<button type="submit">Отправить</button>
+<!-- или -->
+<input type="submit" value="Отправить">
 ```
 
-## Заключение
+`<button type="button">` — обычная кнопка без отправки формы.
 
-В зкалючение, HTML-формы играют ключевую роль в пользовательском взаимодействии в сети. Понимание их структуры, типов ввода, валидации и обработки данных необходимо для веб-разработчиков для создания эффективных и удобных форм. Освоив искусство создания HTML-форм, разработчики могут улучшить общий.
+Полный пример — в [`index.html`](index.html).
+
+## Дальше
+
+- [Атрибуты `<form>`](../3.2%20HTML%20Form%20Attributes/README.md)
+- [Типы input](../3.4%20HTML%20Input%20Types/README.md)
+- [Атрибуты input](../3.5%20HTML%20Input%20Attributes/README.md)

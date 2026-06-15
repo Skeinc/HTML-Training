@@ -1,56 +1,18 @@
-# Тег table
+# `<table>`
 
-Тег ``<table>`` является ключевым элементом в HTML для создания таблиц. Таблицы позволяют представлять данные в удобном табличном формате, делая информацию легкой для восприятия и организации.
+Таблица.
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tag table</title>
-    <style>
-        table {
-            width: 100%;
-        }
-        td {
-            text-align: center;
-        }
-        table,th,td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-    </style>
-</head>
-<body>
-    <table>
-        <tr>
-            <th>Month</th>
-            <th>Savings</th>
-        </tr>
-        <tr>
-            <td>January</td>
-            <td>$100</td>
-        </tr>
-    </table>
-</body>
-</html>
+← [Таблицы](../README.md) · [Справочник](../../README.md)
+
+Парный элемент.
+
+По умолчанию: `display: table`.
+
+```html
+<table>…</table>
 ```
 
-## Определение и использование
+Пример — в [`index.html`](index.html).
 
-Тег ``<table>`` определяет таблицу HTML. Таблица HTML состоит из одного ``<table>`` элемента и одного или нескольких элементов ``<tr>``, ``<th>``, ``<td>``. Элемент ``<tr>`` определяет строку таблицы, элемент ``<th>`` определяет заголовок таблицы, а элемент ``<td>`` определяет ячейку таблицы. Таблицы HTML также может включать элементы:
-- ``<caption>``;
-- ``<colgroup>``;
-- ``<thead>``;
-- ``<tbody>``;
-- ``<tfoot>``.
+- [MDN](https://developer.mozilla.org/ru/docs/Web/HTML/Element/table)
 
-## Примечания
-
-- Тег ``<table>`` поддерживает глобальные атрибуты в HTML.
-- Тег ``<table>`` поддерживает атрибуты событий в HTML.
-
-## Заключение
-
-Тег ``<table>`` в HTML является мощным инструментом для создания табличного представления данных на веб-страницах. При использовании этого тега важно обеспечивать читаемость и организовывать информацию так, чтобы она была легко воспринимаемой.

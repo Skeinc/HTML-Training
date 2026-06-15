@@ -1,123 +1,55 @@
 # HTML Canvas
 
-HTML Canvas - это мощный инструмент, позволяющий веб-разработчикам воплощать свои творческие идеи в интерактивных графических элементах прямо на веб-страницах. Этот элемент HTML открывает двери для создания анимаций, игр, графиков и многого другого. Давайте глубже погрузимся в мир HTML Canvas и его возможности.
+Прямоугольная область для рисования **через JavaScript**. Сам `<canvas>` — только контейнер.
 
-Элемент HTML ``<canvas>`` используется для рисования графики на веб-странице.
+← [HTML Graphics](../README.md) · [SVG](../4.2%20HTML%20SVG/README.md)
 
-## Что такое HTML-холст?
+- [Разметка](#разметка)
+- [Контекст 2D](#контекст-2d)
+- [Ограничения](#ограничения)
+- [Дальше](#дальше)
 
-Элемент HTML ``<canvas>`` используется для рисования графики на лету с помощью JavaScript.
+## Разметка
 
-Элемент ``<canvas>`` представляет собой всего лишь контейнер для графики. Вы должны использовать JavaScript для рисования графики.
-
-В ``<canvas>`` имеется несколько методов рисования контуров, прямоугольников, кругов, текста и добавления изображений.
-
-Canvas поддерживается всеми основными браузерами.
-
-## Примеры холстов
-
-Холст - это прямоугольная область на HTML-странице. По умолчанию холст не имеет границ и содержимого.
-
-Разметка выглядит следующим образом:
-
-```
-<canvas id="exampleCanvas" width="200" height="100" style="border: 1px solid #000;"></canvas>
+```html
+<canvas id="board" width="400" height="200"></canvas>
 ```
 
-**Примечание:** Всегда указывайте ``id`` атрибут (который будет указан в сценарии), а также атрибут ``width`` и ``height`` для определения размера холста. Чтобы добавить границу, используйте ``style`` атрибут.
+| Атрибут | Зачем |
+|---------|-------|
+| `id` | Связь со скриптом |
+| `width` / `height` | Размер в пикселях (не путать с CSS-размером) |
 
-## Добавить JavaScript
+Границы и фон — через CSS. Демо — в [`index.html`](index.html).
 
-После создания прямоугольной области холста вам необходимо добавить JavaScript для рисования.
+## Контекст 2D
 
-Вот некоторые примеры:
+```javascript
+const canvas = document.getElementById('board');
+const ctx = canvas.getContext('2d');
 
-```
-<canvas id="strokeCanvas" width="200" height="100" style="border: 1px solid #000;"></canvas>
-<script>
-    var c = document.getElementById("strokeCanvas");
-    var ctx = c.getContext("2d");
+ctx.fillStyle = '#4a90d9';
+ctx.fillRect(10, 10, 100, 50);
 
-    ctx.moveTo(0, 0);
-    ctx.lineTo(200, 100);
-    ctx.stroke();
-</script>
-```
+ctx.beginPath();
+ctx.arc(200, 100, 40, 0, Math.PI * 2);
+ctx.stroke();
 
-### Нарисовать круг
-
-```
-<canvas id="circleCanvas" width="200" height="100" style="border: 1px solid #000;"></canvas>
-<script>
-    var c = document.getElementById("circleCanvas");
-    var ctx = c.getContext("2d");
-
-    ctx.beginPath();
-    ctx.arc(95, 50, 40, 0, 2 * Math.PI);
-    ctx.stroke();
-</script>
+ctx.font = '20px sans-serif';
+ctx.fillText('Привет', 280, 105);
 ```
 
-### Нарисовать текст
+API: линии, дуги, текст, `drawImage()` для картинок, градиенты, трансформации. Для анимации — `requestAnimationFrame`.
 
-```
-<canvas id="textCanvas" width="200" height="100" style="border: 1px solid #000;"></canvas>
-<script>
-    var c = document.getElementById("textCanvas");
-    var ctx = c.getContext("2d");
+Есть также `webgl` / `webgl2` для 3D.
 
-    ctx.font = "30px Arial";
-    ctx.fillText("Hello, World", 10, 50);
-</script>
-```
+## Ограничения
 
-### Обводка текста
+- Нет доступности «из коробки» — для скринридеров нужен fallback или ARIA
+- При изменении сцены перерисовывайте весь кадр (пиксели не «запоминаются» как объекты)
+- На Retina учитывайте `devicePixelRatio` для чёткости
 
-```
-<canvas id="strokeCanvas" width="200" height="100" style="border: 1px solid #000;"></canvas>
-<script>
-    var c = document.getElementById("textCanvas");
-    var ctx = c.getContext("2d");
+## Дальше
 
-    ctx.font = "30px Arial";
-    ctx.strokeText("Hello, World", 10, 50);
-</script>
-```
-
-### Нарисовать линейный градиент
-
-```
-<canvas id="linearGradientCanvas" width="200" height="100" style="border: 1px solid #000;"></canvas>
-<script>
-    var c = document.getElementById("linearGradientCanvas");
-    var ctx = c.getContext("2d");
-
-    var grd = ctx.createLinearGradient(0, 0, 200, 0);
-    grd.addColorStop(0, "red");
-    grd.addColorStop(1, "white");
-
-    ctx.fillStyle = grd;
-    ctx.fillRect(10, 10, 150, 80);
-</script>
-```
-
-### Нарисуйте круговой градиент
-
-```
-<canvas id="circularGradientCanvas" width="200" height="100" style="border: 1px solid #000;"></canvas>
-<script>
-    var c = document.getElementById("circularGradientCanvas");
-    var ctx = c.getContext("2d");
-
-    var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
-    grd.addColorStop(0, "red");
-    grd.addColorStop(1, "white");
-
-    ctx.fillStyle = grd;
-    ctx.fillRect(10, 10, 150, 80);
-</script>
-```
-
-## Заключение
-
-HTML Canvas предоставляет веб-разработчикам увлекательный инструмент для создания динамичных и интерактивных графических элементов. С его помощью вы можете реализовывать свои творческие идеи, добавлять визуальное волшебство на ваши веб-страницы и обеспечивать пользователям захватывающий опыт взаимодействия.
+- [SVG](../4.2%20HTML%20SVG/README.md) — когда нужен вектор и DOM-события на фигурах
+- [Справочник: canvas](../../HTML%20Reference/HTML%20Tags/Images/Tag%20%3Ccanvas%3E/README.md)

@@ -1,14 +1,14 @@
-# Теги для изображений
+# Изображения
 
-Вставка изображений в HTML - важная часть создания визуально привлекательных и информативных веб-страниц. Изображения играют ключевую роль в визуальном оформлении веб-страниц. С использования тега ``<img>`` и соответствующих атрибутов, вы можете легко интегрировать изображения в свои HTML-проекты.
+← [HTML Tags](../README.md) · [Справочник](../../README.md)
 
-Посетите следующие ресурсы, чтобы узнать больше:
-
-- [Тег img](Tag%20<img>/README.md)
-- [Тег map](Tag%20<map>/README.md)
-- [Тег area](Tag%20<area>/README.md)
-- [Тег canvas](Tag%20<canvas>/README.md)
-- [Тег figcaption](Tag%20<figcaption>/README.md)
-- [Тег figure](Tag%20<figure>/README.md)
-- [Тег picture](Tag%20<picture>/README.md)
-- [Тег svg](Tag%20<svg>/README.md)
+| Тег | Описание |
+|-----|----------|
+| [`area`](Tag%20%3Carea%3E/README.md) | Область в image map |
+| [`canvas`](Tag%20%3Ccanvas%3E/README.md) | Область для рисования через JS |
+| [`figcaption`](Tag%20%3Cfigcaption%3E/README.md) | Подпись к figure |
+| [`figure`](Tag%20%3Cfigure%3E/README.md) | Иллюстрация с подписью |
+| [`img`](Tag%20%3Cimg%3E/README.md) | Изображение |
+| [`map`](Tag%20%3Cmap%3E/README.md) | Карта активных областей изображения |
+| [`picture`](Tag%20%3Cpicture%3E/README.md) | Адаптивные источники изображения |
+| [`svg`](Tag%20%3Csvg%3E/README.md) | Векторная графика SVG |

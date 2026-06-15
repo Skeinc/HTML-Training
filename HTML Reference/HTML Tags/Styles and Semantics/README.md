@@ -1,20 +1,21 @@
-Семантическая разметка в HTML является важным инструментом для создания структурированных и понятных веб-страниц. Правильное использование семантики не только улучшает восприятие информации браузерами, но и повышает доступность и оптимизацию для поисковых систем, что важно для успешного веб-проекта.
+# Стили и семантика
 
-Руководство по стилю HTML является важным инструментом для улучшения качества поддерживаемости кода. Соблюдение стандартов стилей способствует легкости сопровождения проектов, повышает читаемость кода и упрощает совместную разработку. Следование стандартам также способствует созданию более надежных и доступных веб-приложений.
+← [HTML Tags](../README.md) · [Справочник](../../README.md)
 
-Посетите следующие ресурсы, чтобы узнать больше:
-- [Тег style](Tag%20<style>/README.md)
-- [Тег div](Tag%20<div>/README.md)
-- [Тег span](Tag%20<span>/README.md)
-- [Тег header](Tag%20<header>/README.md)
-- [Тег hgroup](Tag%20<hgroup>/README.md)
-- [Тег footer](Tag%20<footer>/README.md)
-- [Тег main](Tag%20<main>/README.md)
-- [Тег section](Tag%20<section>/README.md)
-- [Тег search](Tag%20<search>/README.md)
-- [Тег article](Tag%20<article>/README.md)
-- [Тег aside](Tag%20<aside>/README.md)
-- [Тег details](Tag%20<details>/README.md)
-- [Тег dialog](Tag%20<dialog>/README.md)
-- [Тег summary](Tag%20<summary>/README.md)
-- [Тег data](Tag%20<data>/README.md)
+| Тег | Описание |
+|-----|----------|
+| [`article`](Tag%20%3Carticle%3E/README.md) | Самостоятельный материал |
+| [`aside`](Tag%20%3Caside%3E/README.md) | Боковой / дополнительный контент |
+| [`data`](Tag%20%3Cdata%3E/README.md) | Машиночитаемое значение |
+| [`details`](Tag%20%3Cdetails%3E/README.md) | Раскрывающийся блок |
+| [`dialog`](Tag%20%3Cdialog%3E/README.md) | Диалоговое окно |
+| [`div`](Tag%20%3Cdiv%3E/README.md) | Блочный контейнер без семантики |
+| [`footer`](Tag%20%3Cfooter%3E/README.md) | Подвал страницы или секции |
+| [`header`](Tag%20%3Cheader%3E/README.md) | Шапка страницы или секции |
+| [`hgroup`](Tag%20%3Chgroup%3E/README.md) | Группа заголовков |
+| [`main`](Tag%20%3Cmain%3E/README.md) | Основной контент (один на страницу) |
+| [`search`](Tag%20%3Csearch%3E/README.md) | Область поиска |
+| [`section`](Tag%20%3Csection%3E/README.md) | Тематический раздел |
+| [`span`](Tag%20%3Cspan%3E/README.md) | Строчный контейнер без семантики |
+| [`style`](Tag%20%3Cstyle%3E/README.md) | Встроенные CSS-правила |
+| [`summary`](Tag%20%3Csummary%3E/README.md) | Заголовок details |
